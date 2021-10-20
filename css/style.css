@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display:grid;
+    place-items: center;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    --black: hsl(240, 6%, 13%);
+    --gray: hsl(240,9%, 89%, 1);
+}
+
+main {
+    background: url('../img/Mobile.png');
+    height : 812px;
+    width : 375px;
+    color:var(--gray)
+}
+
+.title {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.foto {
+    width : 10rem;
+    margin: 11.5rem auto 0;
+    position: relative;
+}
+
+.foto span {
+    position: absolute;
+    top: -15px;
+    z-index: 1;
+}
+
+.foto > img {
+    width: 10rem;
+    height: 11.5rem;
+    object-fit: cover;
+
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+} 
+
+.linkGitHub {
+    margin-top: 0.25rem;
+    color: lightgrey;
+    text-decoration: none;
+}
+
+.container2 {
+    height: 536px;
+    width : 256px;
+    place-items: center;
+    display:grid;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin: auto
+}
+.nome {
+    place-items: center;
+}
+.git {
+   font-size: 13px;
+   margin-top: 0.25rem;
+   display: flex;
+   gap: 0.75rem;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.frase {
+    margin-top: 2rem;
+    font-size: 15px;
+    text-align: 0;
+}
+
+.redes {
+    margin-top: 4rem;
+
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+}
